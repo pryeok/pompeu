@@ -41,7 +41,7 @@
   
   </resultMap>
 
-
+<!-- 
    select
         le.creator_no  creatorNo,
         le.lecture_no  lectureNo,
@@ -62,7 +62,7 @@
         t.end_time endTime,
         i.image 
  
-    
+    -->
   </resultMap>
 
 
