@@ -31,7 +31,6 @@ public class DefaultCreatorLectureService implements CreatorLectureService {
 
   @Override
   public List<LectureList> openRequestList(int no) {
-    // TODO Auto-generated method stub
     return creatorLectureDao.findRequestList(no);
   }
   @Override

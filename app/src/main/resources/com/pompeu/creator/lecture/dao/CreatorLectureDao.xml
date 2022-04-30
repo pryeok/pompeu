@@ -6,9 +6,72 @@
 
 <mapper namespace="com.pompeu.creator.lecture.dao.CreatorLectureDao">
 
+
+ <resultMap type="lecture" id="lectureMap">
+    <id column="lectureNo" property="lectureNo"/>
+    
+    <result column="creatorNo" property="creatorNo"/>
+    <result column="locationNo" property="locationNo"/>
+    <result column="inOutEx" property="inOutEx"/>
+    <result column="exNo" property="exNo"/>
+    <result column="classTitle" property="classTitle"/>
+    <result column="startDate" property="startDate"/>
+    <result column="endDate" property="endDate"/>
+    <result column="status" property="status"/>
+    <result column="endDate" property="endDate"/>
+    <result column="endDate" property="endDate"/>
+    
+    <association property="times" javaType="lectureTime">
+      <id column="no" property="no"/>
+      <result column="maxMember" property="maxMember"/>
+      <result column="startTime" property="startTime"/>
+      <result column="endTime" property="endTime"/>
+      
+          <collection property="images" ofType="lectureImage">
+      <id column="ct_no" property="no"/>
+      <result column="tt_no" property="telTypeNo"/>
+      <result column="tel" property="tel"/>
+    </collection>
+      
+     <collection> 
+    </association>
+  
+  
+  
+  
+  </resultMap>
+
+
+   select
+        le.creator_no  creatorNo,
+        le.lecture_no  lectureNo,
+        le.location_no locationNo,
+        le.in_out_ex inOutEx,
+        le.ex_no exNo,
+        le.name        classTitle,
+        
+        le.start_date  startDate,
+        le.end_date    endDate,
+        
+        le.status,
+        le.lecture_price lecturePrice,
+        le.address,
+        
+        t.max_member maxMember,
+        t.start_time startTime,
+        t.end_time endTime,
+        i.image 
+ 
+    
+  </resultMap>
+
+
+
+
   <select id="findAllMyclass" resultType="lectureList" parameterType="int">
         
      select
+        c.creator_no creatorNo,
         le.lecture_no  lectureNo,
         le.name        classTitle,
         le.start_date  startDate,
@@ -28,6 +91,7 @@
         
      from lecture le
         left outer join lecture_time as t on t.lecture_no=le.lecture_no
+        left outer join creator as c on c.creator_no=le.creator_no
         where 
        le.creator_no =#{no}
        order by register_date desc   
@@ -60,7 +124,7 @@
      from lecture le
         left outer join lecture_time as t on t.lecture_no=le.lecture_no
         where 
-       le.creator_no =#{no}
+       le.creator_no =#{no} and le.status =1
        order by register_date desc   
        limit 10
         
@@ -92,17 +156,13 @@
      from lecture le
         left outer join lecture_time as t on t.lecture_no=le.lecture_no
         where 
-       le.creator_no =#{no}
+       le.creator_no =#{no}  and le.status !=1
        order by register_date desc   
        limit 10
         
           
   </select>
-  
-  
-  
-  
-  
+    
     <!--
     select
 	    le.lecture_no  lectureNo,
@@ -130,10 +190,16 @@
   
     <!-- 자동 증가된 PK 값을 받고 싶을 때! -->
   <insert id="insert" parameterType="lecture" keyProperty="no" keyColumn="lecture_no" useGeneratedKeys="true">
+    insert into lecture(location_no,creator_no, ex_no, name, start_date, end_date,lecture_price,lecture_info, register_date,in_out_ex, address) 
+    values(#{locationNo},#{creatorNo}, #{exNo}, #{name}, #{startDate}, #{endDate},#{lecturePrice},#{lectureInfo}, #{registerDate},#{inOutEx}, #{address})
+  </insert>
+  
+  <!-- status=0으로 저장되는 거 잡기 
+    <insert id="insert" parameterType="lecture" keyProperty="no" keyColumn="lecture_no" useGeneratedKeys="true">
     insert into lecture(location_no,creator_no, ex_no, name, start_date, end_date,lecture_price,lecture_info, register_date,status,in_out_ex, address) 
     values(#{locationNo},#{creatorNo}, #{exNo}, #{name}, #{startDate}, #{endDate},#{lecturePrice},#{lectureInfo}, #{registerDate},#{status},#{inOutEx}, #{address})
   </insert>
-  
+-->  
  
     <insert id="insertImages">
     insert into lecture_image(lecture_no, image)
@@ -150,7 +216,7 @@
     </insert>
  
  
- <!-- 
+ <!--  리스트로 들어올 떄 
    <insert id="insertTimes">
     insert into lecture_time(lecture_no ,start_time ,end_time, max_member)
     values
@@ -162,62 +228,36 @@
     -->
         
   
-    <!--
-    <select id="findByNo" resultMap="contactMap" parameterType="int">
+ 
+  <select id="findByNo" resultMap="lectureMap" parameterType="int">
+   
     select
+        le.creator_no  creatorNo,
         le.lecture_no  lectureNo,
+        le.location_no locationNo,
+        le.in_out_ex inOutEx,
+        le.ex_no exNo,
         le.name        classTitle,
         le.start_date  startDate,
         le.end_date    endDate,
         le.status,
-        le.register_date registerDate,
-        img.upload_img uploadImg,
-        t.times_check timesCheck
-    from lecture le
-        left outer join (select
-                            img.lecture_no lecture_no, 
-                            count(*) as upload_img
-                        from lecture_image img 
-                        group by img.lecture_no) as img on img.lecture_no =le.lecture_no
-        left outer join (select 
-                            t.lecture_no, count(*) as times_check
-        from lecture_time t group by t.lecture_no) as t on t.lecture_no=le.lecture_no
-       where 
-       le.creator_no =#{no}
+        le.lecture_price lecturePrice,
+        le.address,
+        t.max_member maxMember,
+        t.start_time startTime,
+        t.end_time endTime,
+        i.image
+        
+     from lecture le
+        left outer join lecture_time as t on t.lecture_no=le.lecture_no
+        left outer join lecture_image as i on t.lecture_no=i.lecture_no
+        where 
+        le.lecture_no=#{no}
+       order by register_date desc   
+
+
   </select>
   
-
-  <select id="findByEmail" resultMap="contactMap" parameterType="string">
-    select 
-      c.contact_no,
-      c.name,
-      c.email,
-      c.company,
-      t.ct_no,
-      t.tt_no,
-      t.tel
-    from 
-      ml_contact c
-      left outer join ml_cont_tel t on c.contact_no=t.contact_no
-    where 
-      c.email=#{email}
-  </select>
-
-  <select id="findByName" resultMap="contactMap" parameterType="string">
-    select 
-      c.contact_no,
-      c.name,
-      c.email,
-      c.company,
-      t.ct_no,
-      t.tt_no,
-      t.tel
-    from 
-      ml_contact c
-      left outer join ml_cont_tel t on c.contact_no=t.contact_no
-    where 
-      c.name=#{name}
-  </select>
   
   <update id="update" parameterType="contact">
     update ml_contact set 

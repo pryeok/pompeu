@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 public class LectureList {
+  int creatorNO;
   int lectureNo;
   String classTitle;
   String startDate;

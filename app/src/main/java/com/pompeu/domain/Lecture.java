@@ -15,7 +15,7 @@ public class Lecture {
   int lecturePrice;
   String lectureInfo;
   String registerDate;
-  int status;
+  // int status; // 기본값이 0이 들어옴으로 막음
   String adminMessage;
   double totalRate;
   int inOutEx;
