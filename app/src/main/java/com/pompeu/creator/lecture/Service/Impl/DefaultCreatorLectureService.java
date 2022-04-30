@@ -30,6 +30,17 @@ public class DefaultCreatorLectureService implements CreatorLectureService {
   }
 
   @Override
+  public List<LectureList> openRequestList(int no) {
+    // TODO Auto-generated method stub
+    return creatorLectureDao.findRequestList(no);
+  }
+  @Override
+  public List<LectureList> openedClassList(int no) {
+    return creatorLectureDao.findClassList(no);
+  }
+
+
+  @Override
   //@Transactional 
   public int add(Lecture lecture) {
     log.info("강좌등록");
@@ -39,6 +50,9 @@ public class DefaultCreatorLectureService implements CreatorLectureService {
     creatorLectureDao.insertImages(lecture.getNo(), lecture.getImages());
     return 1;
   }
+
+
+
 
   @Override
   public Lecture get(int no) {

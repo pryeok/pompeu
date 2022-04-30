@@ -14,6 +14,10 @@ public interface CreatorLectureDao {
 
   List<LectureList> findAllMyclass(@Param("no") int no);
 
+  List<LectureList> findRequestList(@Param("no") int no);
+
+  List<LectureList> findClassList(@Param("no") int no);
+
   //강의 등록 및 시간, 이미지 등록
   int insert(Lecture lecture);
 

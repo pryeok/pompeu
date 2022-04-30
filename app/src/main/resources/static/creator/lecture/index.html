@@ -95,6 +95,20 @@ div.page-header > h3{
 </table>
 </div>
 
+<div class="text-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">&lt</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&gt</a></li>
+                </ul>
+              </nav>
+            </div>
+
 </div>
 </div>
 
@@ -111,10 +125,9 @@ var tbody = document.querySelector("#x-lecture-table tbody")
 
 	 	 fetch("/creatorLecture/list")
     .then(function(response) {
-      console.log(response.json());
-    	//return
+      return response.json()
   
-    })/*
+    })
     .then(function(result) {
       if (result.status == "fail") {
         window.alert("서버 요청 오류!");
@@ -131,9 +144,8 @@ var tbody = document.querySelector("#x-lecture-table tbody")
         tr.innerHTML = `<td>${lectureList.lectureNo}</td>
         <td>${lectureList.classTitle}</a></td>
         <td><span>${lectureList.startDate}</span>~<span>${lectureList.endDate}</span></td>
-        <td>${lectureList.timesCheck}</td>
-        <td>${lectureList.status}</td>
-        <td>${lectureList.uploadImg}</td>
+        <td><span>${lectureList.startTime}</span>~<span>${lectureList.endTime}</span></td>
+        <td>${lectureList.statusCheck}</td>
         <td>${lectureList.registerDate}</td>`;
             
         tbody.appendChild(tr);
@@ -141,7 +153,7 @@ var tbody = document.querySelector("#x-lecture-table tbody")
       }
 
     });      
-    */
+    
 
 </script>
 </body>

@@ -13,4 +13,5 @@ public class LectureList {
   Date registerDate;
   String startTime;
   String endTime;
+  String statusCheck;
 }

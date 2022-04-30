@@ -15,28 +15,94 @@
         le.end_date    endDate,
         le.status,
         le.register_date registerDate,
-        t.start_time,
-        t.end_time,
+        t.start_time startTime,
+        t.end_time endTime,
+        le.status,
         
-         case when le.status = '1' then '개설신청'
+       (  case when le.status = '1' then '개설신청'
             when le.status = '2' then '수강대기'
             when le.status = '3' then '수강중'
             when le.status = '4' then '수강완료'
         else  '승인보류' 
-           end 
+           end ) as statusCheck
         
      from lecture le
         left outer join lecture_time as t on t.lecture_no=le.lecture_no
-       where 
+        where 
        le.creator_no =#{no}
        order by register_date desc   
-    
-    
-    
-   
-    
-    
-    
+       limit 10
+        
+          
+  </select>
+  
+  
+   <select id="findRequestList" resultType="lectureList" parameterType="int">
+        
+     select
+        le.lecture_no  lectureNo,
+        le.name        classTitle,
+        le.start_date  startDate,
+        le.end_date    endDate,
+        le.status,
+        le.register_date registerDate,
+        t.start_time startTime,
+        t.end_time endTime,
+        le.status,
+        
+       (  case when le.status = '1' then '개설신청'
+            when le.status = '2' then '수강대기'
+            when le.status = '3' then '수강중'
+            when le.status = '4' then '수강완료'
+        else  '승인보류' 
+           end ) as statusCheck
+        
+     from lecture le
+        left outer join lecture_time as t on t.lecture_no=le.lecture_no
+        where 
+       le.creator_no =#{no}
+       order by register_date desc   
+       limit 10
+        
+          
+  </select>
+  
+  
+  
+   <select id="findClassList" resultType="lectureList" parameterType="int">
+        
+     select
+        le.lecture_no  lectureNo,
+        le.name        classTitle,
+        le.start_date  startDate,
+        le.end_date    endDate,
+        le.status,
+        le.register_date registerDate,
+        t.start_time startTime,
+        t.end_time endTime,
+        le.status,
+        
+       (  case when le.status = '1' then '개설신청'
+            when le.status = '2' then '수강대기'
+            when le.status = '3' then '수강중'
+            when le.status = '4' then '수강완료'
+        else  '승인보류' 
+           end ) as statusCheck
+        
+     from lecture le
+        left outer join lecture_time as t on t.lecture_no=le.lecture_no
+        where 
+       le.creator_no =#{no}
+       order by register_date desc   
+       limit 10
+        
+          
+  </select>
+  
+  
+  
+  
+  
     <!--
     select
 	    le.lecture_no  lectureNo,
@@ -60,8 +126,7 @@
        order by register_date desc	 
         --> 
 
-      
-  </select>
+
   
     <!-- 자동 증가된 PK 값을 받고 싶을 때! -->
   <insert id="insert" parameterType="lecture" keyProperty="no" keyColumn="lecture_no" useGeneratedKeys="true">

@@ -47,6 +47,27 @@ public class CreatorLectureController {
     //return creatorLectureService.list(member.getNo());
   }
 
+
+  @RequestMapping("openRequest")
+  public Object openRequest(@AuthenticationPrincipal Member member) { // 각자 역할에 따른 분리 - 웹기술은 컨트럴러 단에서만 처리 하도록 
+
+    log.debug(member.getNo());
+
+    return new ResultMap().setStatus(SUCCESS).setData(creatorLectureService.openRequestList(member.getNo()));
+  }
+
+
+
+  @RequestMapping("openedClass")
+  public Object  openedClass(@AuthenticationPrincipal Member member) { // 각자 역할에 따른 분리 - 웹기술은 컨트럴러 단에서만 처리 하도록 
+
+    log.debug(member.getNo());
+
+    return new ResultMap().setStatus(SUCCESS).setData(creatorLectureService.openedClassList(member.getNo()));
+  }
+
+
+
   //클래스 등록
   @RequestMapping("add")
   public Object add(@AuthenticationPrincipal Member member, Lecture lecture , List<MultipartFile> file, LectureTime lectureTime)  {
