@@ -1,0 +1,122 @@
+* {
+   margin:0;
+   padding:0;
+ }
+
+ label{
+     font-size: 1em;
+   margin: 3px;
+ }
+
+ form {
+  border: 1px solid black;
+  size: 70%;
+ }
+
+div.form-group{
+    display: inline-block;
+}
+
+ div.form_item{
+     padding-left: 0;
+ }
+
+ div.form_name{
+     margin: 3px 0 10px 0;
+ }
+ /* div {
+  border: 1px solid red;
+ } */
+
+
+
+ textarea {
+    width: 100%;
+    height: 6.25em;
+    resize: none;
+    }
+
+    
+    textarea:hover{
+ border:  gray;
+            }
+
+
+select.category{
+     width: 260px;
+    height: 40px;
+ font-size: 20px; 
+}
+
+input.name {
+    width: 520px;
+    height: 40px;
+}
+
+input.date{
+    width: 260px;
+    height: 40px;
+}
+
+input.time{
+    width: 260px;
+    height: 40px;
+}
+
+input.address{
+     width: 260px;
+     height: 40px;
+}
+
+input.number{
+    width: 260px;
+    height: 40px;
+}
+
+.page-header {
+font-size: 24px;
+font-weight: bold;
+}
+
+h3 {
+font-size: 24px;
+font-weight: bold;
+}
+
+
+input.form-control{
+  width: 520px;
+    height: 40px;
+}
+
+span.x-textarea{
+    font-size: 1em;
+}
+
+
+div.btn_group{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+input.address_btn{
+    width: 100px;
+    height: 40px;
+    
+}
+
+button.add_btn{
+    width: 100px;
+    height: 40px;
+    background-color: #04CF5C;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button.cancel_btn{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}

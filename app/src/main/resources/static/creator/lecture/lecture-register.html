@@ -1,190 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
- * {
-   margin:0;
-   padding:0;
- }
-
- label{
-   margin: 3px;
- }
-
- form {
-  border: 1px solid black;
-  size: 70%;
- }
-
- div {
-  border: 1px solid red;
- }
-
- textarea {
-    width: 100%;
-    height: 6.25em;
-    resize: none;
-    }
-
-    
-    textarea:hover{
- border:  gray;
-            }
-
-
-select{
- font-size: 20px; 
-}
-
-input.name {
-    width: 520px;
-    height: 40px;
-}
-
-.page-header {
-font-size: 24px;
-font-weight: bold;
-}
-
-h3 {
-font-size: 24px;
-font-weight: bold;
-}
-
-
-</style>
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
-<link href="/css/common.css" rel="stylesheet">
-<title>클래스등록</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/common.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/creator/lecture-register.css">
+  <title>클래스등록</title>
 </head>
+
 <body>
-<div class="container">
-<div id="wrapper">
-<!-- 헤더 & 사이드바 자리 시작 -->
-<div id="header"></div>
+  <div class="container">
+    <div id="wrapper">
+      <!-- 헤더 & 사이드바 자리 시작 -->
+      <div id="header"></div>
 
-<div id="page-wrapper"> <!-- 이 안에 내용 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-
-<div class="page-header">
-  <h3>클래스 등록</h3>
-</div>
-
-<form name="form1">
-
-    <div class="form-group">
-      <label>클래스제목</label>
-      <input name="name" type="text" class="form-control" width="50px" placeholder="클래스제목을 등록해주세요">
-    </div>
+      <div id="page-wrapper">
+        <!-- 이 안에 내용 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
-<div class="firstBox">
-<label>실내외</label>
-<select name="inOutEx" class="category">
-<option value="1">실내</option>
-<option value="2">실외</option>
-</select>
+        <div class="page-header">
+          <h3>클래스 등록</h3>
+        </div>
+
+        <form name="form1">
+
+          <div class="form-group">
+            <div class="col-md-12 form_item form_name">
+              <label for="name">클래스제목</label>
+
+            </div>
+            <div class="col-md-12 form_item">
+              <input name="name" type="text" class="form-control" placeholder="클래스제목을 등록해주세요">
+            </div>
+          </div>
+
+          <div class="firstBox form_name">
+            <div class="col-md-5 form_item">
+              <label>실내외</label>
+            </div>
+            <div class="col-md-7 form_item">
+              <label>운동종목</label>
+            </div>
+          </div>
+          <div class="col-md-5 form_item">
+
+            <select name="inOutEx" class="category">
+              <option value="1">실내</option>
+              <option value="2">실외</option>
+            </select>
+          </div>
+          <div class="col-md-7 form_item">
+            <select name="exNo" class="category">
+              <option value="1">볼링</option>
+              <option value="2">농구</option>
+              <option value="3">야구</option>
+              <option value="4">탁구</option>
+              <option value="5">스킨스쿠버</option>
+              <option value="6">요가</option>
+              <option value="7">테니스</option>
+              <option value="8">주짓수</option>
+              <option value="9">복싱</option>
+              <option value="10">태권도</option>
+              <option value="11">수영</option>
+              <option value="11">패러글라이딩</option>
+              <option value="11">산악자전거</option>
+              <option value="11">스케이트보드</option>
+              <option value="11">서핑</option>
+            </select> <br>
+          </div>
 
 
-<label>운동종목</label>
-  <select name="exNo" class="category">
-    <option value="1">볼링</option>
-    <option value="2">농구</option>
-    <option value="3">야구</option>
-    <option value="4">탁구</option>
-    <option value="5">스킨스쿠버</option>
-    <option value="6">요가</option>
-    <option value="7">테니스</option>
-    <option value="8">주짓수</option>
-    <option value="9">복싱</option>
-    <option value="10">태권도</option>
-    <option value="11">수영</option>
-    <option value="11">패러글라이딩</option>
-    <option value="11">산악자전거</option>
-    <option value="11">스케이트보드</option>
-    <option value="11">서핑</option>
-</select> <br>
-    
-<label>지역</label>
-<select name="locationNo" class="category">
-    <option value="1">서울특별시</option>
-    <option value="2">경기</option>
-    <option value="3">인천광역시</option>
-    <option value="4">광주광역시</option>
-    <option value="5">대전광역시</option>
-    <option value="6">대구광역시</option>
-    <option value="7">울산광역시</option>
-    <option value="8">부산광역시</option>
-    <option value="9">제주시</option> 
-</select>
-<span>* 클래스를 개설할 지역을 선택해주세요.</span>
+          <div class="col-md-12 form_item form_name">
+            <label>지역</label>
 
-</div>
-
-<div class="lectureDate">
-<label>시작일자</label><input name="startDate" type="date">
-<label>종료일자</label><input name="endDate" type="date">
-</div>
+          </div>
+          <div class="col-md-12 form_item">
+            <select name="locationNo" class="category">
+              <option value="1">서울특별시</option>
+              <option value="2">경기</option>
+              <option value="3">인천광역시</option>
+              <option value="4">광주광역시</option>
+              <option value="5">대전광역시</option>
+              <option value="6">대구광역시</option>
+              <option value="7">울산광역시</option>
+              <option value="8">부산광역시</option>
+              <option value="9">제주시</option>
+            </select>
+            <span>* 클래스를 개설할 지역을 선택해주세요.</span>
+          </div>
 
 
- <div id=lectureTime>
-<label>시작시간</label><input  name="startTime" type="time">
-<label>종료시간</label><input name="endTime" type="time">
-</div>
 
-<div id =lecture-price>
-  <label>금액</label> <input name="lecturePrice" type="number" value="0">
-  <label>최대인원</label><input name="maxMember" type="number" value="0">
-  <div>
+          <div class="lectureDate form_name">
+            <div class="col-md-5 form_item">
+              <label>시작일자</label>
+            </div>
+            <div class="col-md-7 form_item">
 
-    <div id="lecture-text1">
-      <span id="x-textarea">클래스소개</span></div>
+              <label>종료일자</label>
+            </div>
+          </div>
+          <div class="col-md-5 form_item">
 
-      <div id="lecture-text2">
-      <textarea name="lectureInfo" class="form-control" rows="10" border="1px solid #ccc"></textarea>
+            <input name="startDate" type="date" class="date">
+          </div>
+          <div class="col-md-7 form_item">
+
+            <input name="endDate" type="date" class="date">
+          </div>
+
+
+
+          <div id=lectureTime>
+            <div class="form_name">
+              <div class="col-md-5 form_item">
+                <label>시작시간</label>
+              </div>
+              <div class="col-md-7 form_item">
+                <label>종료시간</label>
+              </div>
+            </div>
+
+            <div class="col-md-5 form_item">
+              <input name="startTime" type="time" class="time">
+            </div>
+            <div class="col-md-7 form_item">
+              <input name="endTime" type="time" class="time">
+            </div>
+
+          </div>
+
+          <div id=lecture-price>
+            <div class="col-md-5 form_item">
+              <label>금액</label>
+            </div>
+            <div class="col-md-7 form_item">
+              <label>최대인원</label>
+            </div>
+            <div class="col-md-5 form_item">
+
+              <input name="lecturePrice" type="number" value="0" class="number">
+            </div>
+            <div class="col-md-7 form_item">
+              <input name="maxMember" type="number" value="0" min="1" max="30" class="number">
+
+            </div>
+          </div>
+          <div class="class_body">
+
+            <div id="lecture-text1">
+              <span id="x-textarea">클래스소개</span></div>
+
+            <div id="lecture-text2">
+              <textarea name="lectureInfo" class="form-control" rows="10" border="1px solid #ccc"></textarea>
+            </div>
+
+
+            <div id=lecture-image>
+              <label>이미지등록</label><input name="file" class="file" type="file" multiple><br>
+            </div>
+
+            <div id=lecture-location>
+              <label>클래스장소</label><br>
+              <input type="text" id="sample5_address" name="address" class="address" placeholder="주소를 입력하세요">
+              <!-- 주소입력 -->
+              <input type="button" class="address_btn" onclick="sample5_execDaumPostcode()" value="주소 검색">
+            </div>
+
+            <div id="map" style="width:300px;height:300px;margin-top:10px;display:none">
+
+            </div>
+            <div class="btn_group">
+              <button id="x-add-btn" type="button" class="add_btn">등록</button>
+              <button id="x-cancel-btn" type="button" class="cancel_btn">취소</button>
+
+            </div>
+
+
+        </form>
+
+
+      </div> <!-- 이 안에 내용 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <!-- /#page-wrapper -->
+      <!-- 내용물 자리 끝 -->
+
+    </div><!-- /#wrapper -->
   </div>
 
-  
-<div id =lecture-image>
-<label>이미지등록</label><input name="file" type="file" multiple><br>
-</div>
-
-<div id =lecture-location>
-<label>클래스장소</label><br>
-<input type="text" id="sample5_address" name="address" placeholder="주소를 입력하세요"> <!-- 주소입력 -->
-<input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색">
-</div>
-
-<div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>
-
-<button id="x-add-btn" type="button">등록</button>
-<button id="x-cancel-btn" type="button">취소</button>
-
-</form>
-
-
-</div> <!-- 이 안에 내용 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<!-- /#page-wrapper --> 
-<!-- 내용물 자리 끝 -->
-    
-</div><!-- /#wrapper -->
-</div>
-
-<script src="/node_modules/jquery/dist/jquery.js"></script>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/js/creator/layout.js"></script>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=159964123281fe5e2498f0fd14de35cf&libraries=services"></script>
-<script>
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/creator/layout.js"></script>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=159964123281fe5e2498f0fd14de35cf&libraries=services"></script>
+  <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-        mapOption = {
-            center: new daum.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
-            level: 5 // 지도의 확대 레벨
-        };
+      mapOption = {
+        center: new daum.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
+        level: 5 // 지도의 확대 레벨
+      };
 
     //지도를 미리 생성
     var map = new daum.maps.Map(mapContainer, mapOption);
@@ -192,100 +208,99 @@ font-weight: bold;
     var geocoder = new daum.maps.services.Geocoder();
     //마커를 미리 생성
     var marker = new daum.maps.Marker({
-        position: new daum.maps.LatLng(37.537187, 127.005476),
-        map: map
-         });
+      position: new daum.maps.LatLng(37.537187, 127.005476),
+      map: map
+    });
+
     function sample5_execDaumPostcode() {
-        new daum.Postcode({
-          oncomplete: function(data) {
-            var addr =data.address;
-            
-                // 주소 정보를 해당 필드에 넣는다.
-                document.getElementById("sample5_address").value = addr;
-                // 주소로 상세 정보를 검색
-                geocoder.addressSearch(data.address, function(results, status) {
-                    // 정상적으로 검색이 완료됐으면
-                    if (status === daum.maps.services.Status.OK) {
+      new daum.Postcode({
+        oncomplete: function (data) {
+          var addr = data.address;
 
-                        var result = results[0]; //첫번째 결과의 값을 활용
-                        console.log("확인용");
-                        // 해당 주소에 대한 좌표를 받아서
-                        var coords = new daum.maps.LatLng(result.y, result.x);
-                        // 지도를 보여준다.
-                        mapContainer.style.display = "block";
-                        map.relayout();
-                        // 지도 중심을 변경한다.
-                        map.setCenter(coords);
-                        // 마커를 결과값으로 받은 위치로 옮긴다.
-                        marker.setPosition(coords)
-                    }
-                });
+          // 주소 정보를 해당 필드에 넣는다.
+          document.getElementById("sample5_address").value = addr;
+          // 주소로 상세 정보를 검색
+          geocoder.addressSearch(data.address, function (results, status) {
+            // 정상적으로 검색이 완료됐으면
+            if (status === daum.maps.services.Status.OK) {
+
+              var result = results[0]; //첫번째 결과의 값을 활용
+              console.log("확인용");
+              // 해당 주소에 대한 좌표를 받아서
+              var coords = new daum.maps.LatLng(result.y, result.x);
+              // 지도를 보여준다.
+              mapContainer.style.display = "block";
+              map.relayout();
+              // 지도 중심을 변경한다.
+              map.setCenter(coords);
+              // 마커를 결과값으로 받은 위치로 옮긴다.
+              marker.setPosition(coords)
             }
-        }).open();
+          });
+        }
+      }).open();
     }
-</script>
-<script>
+  </script>
+  <script>
+    var xstartDate = document.querySelector("input[name=startDate]");
+    var xendDate = document.querySelector("input[name=endDate]");
+    var xstartTime = document.querySelector("#startTime");
+    var xTextarea = document.querySelector("#x-textarea");
 
-var xstartDate = document.querySelector("input[name=startDate]");
-var xendDate = document.querySelector("input[name=endDate]");
-var xstartTime = document.querySelector("#startTime");
-var xTextarea = document.querySelector("#x-textarea");
+    document.querySelector("#x-add-btn").onclick = function () {
 
-document.querySelector("#x-add-btn").onclick = function() {
-  
-	 if (xTextarea.value == ""  
-		    ) {
-		   window.alert('제목을 등록해주세요');
-		    return;
-		  }
-	
-	
-	if (xstartDate.value == "" || 
-		  xendDate.value == "" ) {
-   window.alert('시작일자, 종료일자를 입력해주세요');
-    return;
-  }
- 
+      if (xTextarea.value == "") {
+        window.alert('제목을 등록해주세요');
+        return;
+      }
 
-var fd = new FormData(document.forms.namedItem("form1"));
+
+      if (xstartDate.value == "" ||
+        xendDate.value == "") {
+        window.alert('시작일자, 종료일자를 입력해주세요');
+        return;
+      }
+
+
+      var fd = new FormData(document.forms.namedItem("form1"));
 
 
 
-if (xstartDate.value == "" ||
-		xendDate.value == "" ) { // 날짜를 지정하지않으면 서버에 보내지 않는다.
-    fd.delete("xstartDate","xendDate");
-  }
+      if (xstartDate.value == "" ||
+        xendDate.value == "") { // 날짜를 지정하지않으면 서버에 보내지 않는다.
+        fd.delete("xstartDate", "xendDate");
+      }
 
 
-fetch("/creatorLecture/add", { 
-    method: "POST",
-    body: fd
-  }) 
-  .then(function(response) {
-	    console.log(response);
-	  return response.json();
+      fetch("/creatorLecture/add", {
+          method: "POST",
+          body: fd
+        })
+        .then(function (response) {
+          console.log(response);
+          return response.json();
 
-  })
-  .then(function(result) {
-    console.log(result);
-    if (result.status == "success") {
-    
-     window.alert('클래스 등록이 완료되었습니다.');
-      
-      location.href = "/creator/lecture/index.html";
-    } else {
-      alert(result.data);
+        })
+        .then(function (result) {
+          console.log(result);
+          if (result.status == "success") {
+
+            window.alert('클래스 등록이 완료되었습니다.');
+
+            location.href = "/creator/lecture/index.html";
+          } else {
+            alert(result.data);
+          }
+        });
+
+
+
+      document.querySelector("#x-cancel-btn").onclick = function () {
+        window.location.href = "/creator/lecture/index.html";
+      }
+
     }
-  });
-
-
-
-document.querySelector("#x-cancel-btn").onclick = function() {
-    window.location.href = "/creator/lecture/index.html";
-    }
-    
-}
-
-</script>
+  </script>
 </body>
+
 </html>
