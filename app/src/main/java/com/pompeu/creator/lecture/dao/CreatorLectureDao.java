@@ -10,13 +10,13 @@ import com.pompeu.domain.LectureTime;
 @Mapper
 public interface CreatorLectureDao {
 
-  int countAll();
+  //int countAll();
 
-  List<LectureList> findAllMyclass(@Param("no") int no);
+  List<LectureList> findAllMyclass(@Param("no") int no); //리스트 받기
 
-  List<LectureList> findRequestList(@Param("no") int no);
+  //List<LectureList> findRequestList(@Param("no") int no);
 
-  List<LectureList> findClassList(@Param("no") int no);
+  //List<LectureList> findClassList(@Param("no") int no);
 
   //강의 등록 및 시간, 이미지 등록
   int insert(Lecture lecture);
@@ -27,11 +27,11 @@ public interface CreatorLectureDao {
 
   Lecture findByNo(int no);
 
-  int update(Lecture lecture);
+  // int update(Lecture lecture);
 
-  int delete(int no);
+  // int delete(int no);
 
-  int deleteTelBylectureNo(int lectureNo);
+
 
 }
 

@@ -6,20 +6,20 @@ import com.pompeu.domain.LectureList;
 
 public interface CreatorLectureService {
 
-  int countAll();
+  //int countAll();
 
   List<LectureList> list(int no);
 
-  List<LectureList> openRequestList(int no);
+  // List<LectureList> openRequestList(int no);
 
-  List<LectureList> openedClassList(int no);
+  // List<LectureList> openedClassList(int no);
 
   Lecture get(int no);
 
   int add(Lecture lecture);
 
-  int update(Lecture lecture);
+  // int update(Lecture lecture);
 
-  int delete(int no);
+  //int delete(int no);
 
 }

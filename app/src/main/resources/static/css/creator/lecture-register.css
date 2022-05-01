@@ -9,8 +9,7 @@
  }
 
  form {
-  border: 1px solid black;
-  size: 70%;
+   size: 70%;
  }
 
 div.form-group{
@@ -37,40 +36,53 @@ div.form-group{
     }
 
     
-    textarea:hover{
- border:  gray;
-            }
+.form-control {
+	border:1px solid black;
+}
 
 
 select.category{
      width: 260px;
     height: 40px;
- font-size: 20px; 
+
+
 }
 
 input.name {
     width: 520px;
     height: 40px;
+    font-size: 1.0em;
+
 }
 
 input.date{
     width: 260px;
     height: 40px;
+     font-size: 1.0em;
+     text-align:center;
+   
 }
 
 input.time{
     width: 260px;
     height: 40px;
+     font-size: 1.0em;
+     text-align:center;
+    
 }
 
 input.address{
-     width: 260px;
+     width: 40%;
      height: 40px;
+      font-size: 1.0em;
+         text-align:center;
 }
 
 input.number{
     width: 260px;
     height: 40px;
+     font-size: 1.0em;
+     text-align:center;
 }
 
 .page-header {
@@ -90,7 +102,7 @@ input.form-control{
 }
 
 span.x-textarea{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 

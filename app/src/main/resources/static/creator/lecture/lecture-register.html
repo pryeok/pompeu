@@ -33,7 +33,7 @@
 
             </div>
             <div class="col-md-12 form_item">
-              <input name="name" type="text" class="form-control" placeholder="클래스제목을 등록해주세요">
+              <input name="name" type="text" class="form-control" placeholder="클래스제목을 작성해주세요">
             </div>
           </div>
 
@@ -152,10 +152,10 @@
           <div class="class_body">
 
             <div id="lecture-text1">
-              <span id="x-textarea">클래스소개</span></div>
+              <label>클래스소개</label></div>
 
             <div id="lecture-text2">
-              <textarea name="lectureInfo" class="form-control" rows="10" border="1px solid #ccc"></textarea>
+              <textarea id=infoarea name="lectureInfo" class="form-control" rows="10"  placeholder="클래스소개를 작성해주세요"></textarea>
             </div>
 
 
@@ -163,6 +163,7 @@
               <label>이미지등록</label><input name="file" class="file" type="file" multiple><br>
             </div>
 
+  
             <div id=lecture-location>
               <label>클래스장소</label><br>
               <input type="text" id="sample5_address" name="address" class="address" placeholder="주소를 입력하세요">
@@ -245,8 +246,16 @@
     var xstartDate = document.querySelector("input[name=startDate]");
     var xendDate = document.querySelector("input[name=endDate]");
     var xstartTime = document.querySelector("#startTime");
-    var xTextarea = document.querySelector("#x-textarea");
+    var xTextarea = document.querySelector("#infoarea");
 
+
+    document.querySelector("#x-cancel-btn").onclick = function () {
+      console.log("취소눌렀음");
+      window.location.href = "/creator/lecture/lecture-index.html";
+    }
+
+    
+    
     document.querySelector("#x-add-btn").onclick = function () {
 
       if (xTextarea.value == "") {
@@ -287,17 +296,13 @@
 
             window.alert('클래스 등록이 완료되었습니다.');
 
-            location.href = "/creator/lecture/index.html";
+            location.href = "/creator/lecture/lecture-index.html";
           } else {
             alert(result.data);
           }
         });
 
 
-
-      document.querySelector("#x-cancel-btn").onclick = function () {
-        window.location.href = "/creator/lecture/index.html";
-      }
 
     }
   </script>

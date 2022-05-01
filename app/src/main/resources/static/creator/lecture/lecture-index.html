@@ -30,28 +30,30 @@ div.page-header > h3{
   width: 100%;
 }
 
-.menu {
-  width: 30px;
-  height: 10px;
-  color: aqua;
-  background-color: red;
-  margin:5px;
-}
 
-#page-menu{
-  border:1px solid red;
-    position: relative;
-}
 .new-class{
-  border:1px solid red;
-  position: relative;
-  right: 0px;
+  border:1px solid gray;
+
+  right: 100px;
 }
 
 #x-lecture-table {
   text-align: center;
 }
 
+#x-add-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #04CF5C;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+th{
+text-align: center;
+}
 </style>
 </head>
 
@@ -70,10 +72,8 @@ div.page-header > h3{
 </div>
 
 <div id="page-menue">
-  <span class="menu">전체</span> 
-  <span class="menu">클래스</span> 
-  <span class="menu">개설요청</span>
-  <span class="new-class"><a href="/creator/lecture/creator-lecture.html">새 클래스등록</a></span>
+  <button type="button" class="add_btn"><a href="/creator/lecture/lecture-register.html">새 클래스등록</a></button>
+ 
 </div>
 
 <div id="class-list">
