@@ -50,6 +50,4 @@ public interface UserLectureDao {
   List<Lecture> mapping(int no);
 
   List<Lecture> siSep2(int no);
-
-
 }
