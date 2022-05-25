@@ -51,4 +51,5 @@ public interface UserLectureDao {
 
   List<Lecture> siSep2(int no);
 
+
 }
