@@ -145,14 +145,12 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
 
 
 
-
   //  어떤 Authentication 매니저를 사용할지
   //  @Bean(BeanIds.AUTHENTICATION_MANAGER)
   //  @Override
   //  public AuthenticationManager authenticationManagerBean() throws Exception {
   //    return super.authenticationManager();
   //  }
-
 
 
 
@@ -168,5 +166,6 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
         "resource/static/js/**",
         "/resource/static/form/**");    
   }
+
 
 }
