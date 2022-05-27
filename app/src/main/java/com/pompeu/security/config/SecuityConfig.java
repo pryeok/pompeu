@@ -169,6 +169,4 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
         "/resource/static/form/**");    
   }
 
-
-
 }
