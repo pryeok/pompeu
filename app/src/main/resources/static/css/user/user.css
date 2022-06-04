@@ -607,7 +607,7 @@ border: 1px solid black;
 }
 
 
-.btn-ask {
+#btn-ask {
   width: 80px;
   height: 30px;
   border-radius: 5px;
