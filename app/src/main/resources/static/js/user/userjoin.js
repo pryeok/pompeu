@@ -292,7 +292,6 @@ xBtn.addEventListener('click', (e) => {
 
 
 
-
     Swal.fire({
         title: '회원가입 하시겠습니까?',
         icon: 'info',
