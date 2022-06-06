@@ -1,39 +1,34 @@
-# 🐶 wellseecoding
-
-## 📎 [웰시코딩 URL 바로가기](https://wellseecoding.com/)
-
-## 🎨 [웰시코딩 figma 기획 & 디자인 바로가기](https://www.figma.com/file/Usjrjva4mujv7OofFMzflD/side-project?node-id=531%3A5)
-
-![](https://images.velog.io/images/leemember/post/daa7d3ca-e291-4e9b-9bf4-deb8d042d36f/KakaoTalk_Photo_2021-11-16-06-28-23.png)
+# 🐶 폼나는 라이프: 폼프
 
 ## 📍 프로젝트 소개
 
 > 먼저 프로젝트명 **wellseecoding 은 '코딩을 곧 잘 알게될거야'** 라는 뜻 입니다. <br> IT업계 취준생, 현업자들을 위한 웹앱이며, 혼자 공부하는 것보다 함께 목적달성을 하기 위한 사람들을 매칭 시켜주는 플랫폼 입니다. 수많은 IT 커뮤니티들과 비교 해봤을 때, `wellSeeCoding`이 뽐낼만한 차별점은 실명제로 하여금 스터디나 사이드 프로젝트를 구할 시, 보다 더 신뢰도를 가질 수 있다는 점과 함께 할 구성원들을 스터디장이 신청자의 마이페이지 이력들을 보고 핏이 맞는 사람으로 컨택할 수 있다는 점입니다. 또 내세울만 한 차별점이라면 사람들이 이용하기 편리하도록 제작된 UI/UX 입니다. <br/> (실제로 IT업계에 종사하는 50명 내외의 다양한 직군의 사람들을 직접 설문조사 한 결과물을 참고하여 유저들의 니즈에 맞춰 기획하고 디자인하고 개발했습니다.)
 
-### [😃 설문조사에 참여하시겠습니까? Click](https://docs.google.com/forms/d/e/1FAIpQLSeRV2HfLc_WMtD5FeCmYfC3vsQRyyXjcO-wDzvOl_z4h0QUDQ/viewform)
-
 <br>
 
-## ⏳ 작업 기간 (2021. 08 ~ 2021. 11)
+## ⏳ 작업 기간 (2022. 03 ~ 2021. 04)
 
 <br>
 
 ## ✨ 팀 소개
 
-| 팀명                  | MIC (May I clone?) |
+| 팀명                  | deVela Team |
 | --------------------- | ------------------ |
-| 프론트엔드 개발자     | 이현주             |
-| 프론트엔드 개발자     | 이준희             |
-| 기획 & UI/UX 디자이너 | 박진아             |
+| 팀원     | 박 력             |
+| 팀원     | 오승지            |
+| 팀원     | 최리나             |
+| 팀원     | 장창훈             |
+| 팀원     | 임성현             |
+| 팀원     | 장효범             |
 
 <br>
 
-## 💻 Front 기술 스택
+## 💻 기술 스택
 
 | 역할          | 스택명                                                                                                                                                                                                           |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 프레임워크    | ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)                                                                                                             |
-| CSS-in-JS     | ![Emotion](https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)                                                                                               |
+| 개발    | ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)                                                                                                             |
+| 사용언어     | ![Emotion](https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)                                                                                               |
 | 상태관리      | ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)                                                                                                        |
 | 기본 언어     | ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)                                                                                         |
 | 포맷팅        | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)                                                                                                            |
@@ -56,7 +51,7 @@
 | API 관리      | ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)                                                                                                                                           |
 | 버전 컨트롤   | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)                                   |
 
-## 🧑🏻‍💻 역할분담
+## 🧑🏻‍💻 ERD 다이어그램
 
 | 작업자 | 작업 내용                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -65,9 +60,11 @@
 
 <br>
 
-## 🌟 `웰시코딩` 주요 기능 소개
+## 🧑🏻‍💻 Architecture
 
-### `로그인`
+## 🌟 `웰시코딩` 구현 목표
+
+### `일반 회원`
 
 로그인 기능은 총 3가지의 경우를 지원합니다
 
@@ -75,7 +72,16 @@
 - 카카오로 로그인
 - 네이버로 로그인
 
-### `회원 가입`
+### `크리에이터`
+
+가입한 정보를 바탕으로 자신을 소개할 수 있는 정보를 입력합니다.
+
+- 현재 자신의 상태 (학생/취준생/현업 개발자)
+- 간단한 자기소개
+- 자신을 나타낼 수 있는 포트폴리오
+- 경력 정보
+
+### `관리자`
 
 가입한 정보를 바탕으로 자신을 소개할 수 있는 정보를 입력합니다.
 
@@ -125,14 +131,14 @@
 
 ## 👩🏻‍🏫 주요 기능 화면 바로보기
 
-### 🔸 회원가입 `현주`
+### 🔸 메인 페이지
 
 이름, 이메일, 비밀번호, 비밀번호 확인 까지 유효성 검사를 철저히 마친 후 회원가입이 성공적으로 완료되면 마이페이지에 소개 될 프로필을 입력합니다.
 
 <img src="https://images.velog.io/images/junh0328/post/d93a284e-cbf1-465a-97cf-6987d5bc4307/%E1%84%92%E1%85%AC%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8.2021-11-15%2023_26_02.gif" width="400"/>
 
 
-### 🔸 마이페이지 `현주`
+### 🔸 클래스 페이지
 
 회원가입 절차에서 입력된 프로필 내용물들을 마이페이지에서 확인해 볼 수 있습니다 ! 🙆🏻‍♀️ 추후에 수정 작업도 가능합니다.
 
@@ -140,12 +146,9 @@
 
 <br>
 
---------------------
-
-<br>
 <br>
 
-### 🔸 함께해요 페이지 `준희`
+### 🔸 소모임 페이지
 
 랜덤 포스트 불러오기
 
@@ -163,7 +166,7 @@
 
 <img src="https://images.velog.io/images/junh0328/post/4f5ad03d-358c-4743-82d9-067f38ebe8ca/%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%AA%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%B5.2021-11-15%2022_50_57.gif" width="400"/>
 
-### 🔸 게시글 댓글 관련 기능 보기 `준희`
+### 🔸 관리자 
 
 댓글 쓰기 / 수정하기 / 삭제하기 / 답글 쓰기
 
