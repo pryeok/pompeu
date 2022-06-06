@@ -1,13 +1,20 @@
-# 🐶 폼나는 라이프: 폼프
+<br>
+
+# 🏆 폼나는 라이프: 폼프
+
+<br>
+<br>
 
 ## 📍 프로젝트 소개
 
 > 먼저 프로젝트명 **wellseecoding 은 '코딩을 곧 잘 알게될거야'** 라는 뜻 입니다. <br> IT업계 취준생, 현업자들을 위한 웹앱이며, 혼자 공부하는 것보다 함께 목적달성을 하기 위한 사람들을 매칭 시켜주는 플랫폼 입니다. 수많은 IT 커뮤니티들과 비교 해봤을 때, `wellSeeCoding`이 뽐낼만한 차별점은 실명제로 하여금 스터디나 사이드 프로젝트를 구할 시, 보다 더 신뢰도를 가질 수 있다는 점과 함께 할 구성원들을 스터디장이 신청자의 마이페이지 이력들을 보고 핏이 맞는 사람으로 컨택할 수 있다는 점입니다. 또 내세울만 한 차별점이라면 사람들이 이용하기 편리하도록 제작된 UI/UX 입니다. <br/> (실제로 IT업계에 종사하는 50명 내외의 다양한 직군의 사람들을 직접 설문조사 한 결과물을 참고하여 유저들의 니즈에 맞춰 기획하고 디자인하고 개발했습니다.)
 
 <br>
+<br>
 
 ## ⏳ 작업 기간 (2022. 03 ~ 2021. 04)
 
+<br>
 <br>
 
 ## ✨ 팀 소개
@@ -22,47 +29,36 @@
 | 팀원     | 장효범             |
 
 <br>
+<br>
 
 ## 💻 기술 스택
 
 | 역할          | 스택명                                                                                                                                                                                                           |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 개발    | ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)                                                                                                             |
-| 사용언어     | ![Emotion](https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)                                                                                               |
-| 상태관리      | ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)                                                                                                        |
-| 기본 언어     | ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)                                                                                         |
-| 포맷팅        | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)                                                                                                            |
-| 패키지 매니저 | ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)                                                                                                           |
-| 토큰 관리     | ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)                                                                                                                      |
-| 서버          | ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)                                                                                                        |
-| 버전 컨트롤   | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
+| 개발언어    | ![JAVA](https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white) ![GRADLE](https://img.shields.io/badge/GRADLE-007396?style=for-the-badge&logo=gradle&logoColor=white)                                                                                                  |
+| 프레임워크     | ![SpringBoot](https://img.shields.io/badge/springboot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)                                                                                   |
+| 데이터베이스      | ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MariaDB](https://img.shields.io/badge/mariadb-6CB1F6.svg?style=for-the-badge&logo=mariadb&logoColor=white)                                                                                                |
+| 서버     | ![AWS RDS](https://img.shields.io/badge/AWS%20RDS-%23007ACC.svg?style=for-the-badge&logo=amazon%20AWS&logoColor=white)                                                                                         |
+| 인증관리        | ![SPRING SECURITY](https://img.shields.io/badge/SPRING%20SECURITY-4B3263?style=for-the-badge&logo=spring%20security&logoColor=white)                                                                                                            |
+| API 관리 | ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)                                                                                                            |
+| 버전 컨트롤     | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)     
 
 <br>
-
-## 💻 Backend 기술 스택
-
-| 역할          | 스택명                                                                                                                                                                                                                                             |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 프레임워크    | ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)                                                                                                                                       |
-| 서버          | ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)                                                                                                                                          |
-| 토큰 관리     | ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)                                                                                                                                                        |
-| 데이터 베이스 | ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)                                                                                                                                             |
-| CI/CD         | ![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) |
-| API 관리      | ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)                                                                                                                                           |
-| 버전 컨트롤   | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)                                   |
-
-## 🧑🏻‍💻 ERD 다이어그램
-
-| 작업자 | 작업 내용                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 이준희 | - 로그인 및 소셜로그인(NAVER, KAKAO) 관리 <br> - 홈/ 함께해요/ 알림/ 검색 페이지에 대한 반응형 웹 페이지 구현 <br> - 재사용 가능한 모달 컴포넌트 구현<br> - 함께해요 페이지 게시판 CRUD 작업 <br> - 댓글 페이지 관련 CRUD 작업<br> - 검색 페이지 구현 <br> - 메인 페이지 기능 구현 <br> - 알림 페이지 구현<br> - 상태 관리 및 전반적인 흐름 제어 <br> - 코드 리뷰 <br> - 백엔드 API 개발 및 연동 |
-| 이현주 | - 아이디어 기획 및 팀빌딩 구성 <br> - 디자이너와 함께 플로우 차트 기획 <br> - 전 페이지 UI/UX 레이아웃 마크업 작업 <br> - 회원가입 폼 조건에 따라 유효성 검사 <br> - 회원가입 절차 (유저의 정보 입력폼 작업) <br> - 회원가입을 통해 POST시킨 마이페이지 정보 GET 으로 불러오기 <br> - 마이페이지 수정  <br> - 상태 관리 및 흐름 제어 <br> - 재사용 가능한 컴포넌트 구현                                                                                                                                                                                                                                                                                                                                         |
-
 <br>
 
-## 🧑🏻‍💻 Architecture
+## 📝 ERD 다이어그램
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c4d91310-4f62-4070-90f4-f385d163e62f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220606%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220606T142442Z&X-Amz-Expires=86400&X-Amz-Signature=f8b9e3aaa4323cc64a130ca156d526e14cc6b56c029044163b9ef6b90750f72d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="1500"/>
 
-## 🌟 `웰시코딩` 구현 목표
+<br>
+<br>
+
+## 🔅 Architecture
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/25b89a71-e574-40a7-a15f-abaacd5fd4c4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220606%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220606T144204Z&X-Amz-Expires=86400&X-Amz-Signature=56d601dadb7add73a0d7ba5d421a3ff2348b65b90668bf1b865d117d612d9e10&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="1500"/>
+
+<br>
+<br>
+
+## 🌟 `폼프` 구현 목표
 
 ### `일반 회원`
 
