@@ -7,7 +7,7 @@
 
 ## 📍 프로젝트 소개
 
-> 먼저 프로젝트명 **wellseecoding 은 '코딩을 곧 잘 알게될거야'** 라는 뜻 입니다. <br> IT업계 취준생, 현업자들을 위한 웹앱이며, 혼자 공부하는 것보다 함께 목적달성을 하기 위한 사람들을 매칭 시켜주는 플랫폼 입니다. 수많은 IT 커뮤니티들과 비교 해봤을 때, `wellSeeCoding`이 뽐낼만한 차별점은 실명제로 하여금 스터디나 사이드 프로젝트를 구할 시, 보다 더 신뢰도를 가질 수 있다는 점과 함께 할 구성원들을 스터디장이 신청자의 마이페이지 이력들을 보고 핏이 맞는 사람으로 컨택할 수 있다는 점입니다. 또 내세울만 한 차별점이라면 사람들이 이용하기 편리하도록 제작된 UI/UX 입니다. <br/> (실제로 IT업계에 종사하는 50명 내외의 다양한 직군의 사람들을 직접 설문조사 한 결과물을 참고하여 유저들의 니즈에 맞춰 기획하고 디자인하고 개발했습니다.)
+> 먼저 프로젝트명 **폼프 는 '폼나는 라이프를 즐기자'** 라는 뜻 입니다. <br> 이전에 운동을 하지 않았거나 취미로 운동을 시작하고 싶은데 어떠한 운동을 하면 좋을지 <br>알기 어려운 입문자들을 위해 맞춤 운동 매칭을 제공하는 서비스가 이 플랫폼의 주목적입니다. 
 
 <br>
 <br>
@@ -60,126 +60,59 @@
 
 ## 🌟 `폼프` 구현 목표
 
-### `일반 회원`
+### `일반회원`
 
-로그인 기능은 총 3가지의 경우를 지원합니다
+폼프를 이용해주시는 주고객 
 
-- 이메일로 로그인
-- 카카오로 로그인
-- 네이버로 로그인
+- 회원에게 상황에 적합한 운동 추천서비스
+- 전문적인 클래스 매칭 서비스
+- 회원간 운동모임 소모임 서비스
 
 ### `크리에이터`
 
-가입한 정보를 바탕으로 자신을 소개할 수 있는 정보를 입력합니다.
+폼프를 통해서 운동 클래스를 제공하는 멘토
 
-- 현재 자신의 상태 (학생/취준생/현업 개발자)
-- 간단한 자기소개
-- 자신을 나타낼 수 있는 포트폴리오
-- 경력 정보
+- 크리에이터가 추구하는 클래스 등록
+- 개설된 클래스 조회 및 관리
+- 클래스에 관한 일반회원의 문의 관리
 
 ### `관리자`
 
-가입한 정보를 바탕으로 자신을 소개할 수 있는 정보를 입력합니다.
+폼프 서비스를 전반적으로 컨트롤
 
-- 현재 자신의 상태 (학생/취준생/현업 개발자)
-- 간단한 자기소개
-- 자신을 나타낼 수 있는 포트폴리오
-- 경력 정보
-
-등 을 기입할 수 있습니다
-
-### `함께해요`
-
-함께해요 페이지는 사용자가 게시글 작성시에 생성한 해시태그 등을 바탕으로 랜덤으로 게시글을 가져올 수 있는 구조입니다.
-
-자신의 정보를 바탕으로 글을 작성할 수 있으며, 자신의 글에 대한 키워드를 해시태그로 추가하여 글에 대한 정보를 한눈에 볼 수 있습니다.
-
-검색 기능을 통해 모임 '이름/ 소개 / 태그' 를 바탕으로 한 게시글을 불러올 수 있습니다.
-
-로컬 스토리지에 저장된 정보를 바탕으로 최근 검색어를 유지시켜줍니다.
-
-### `홈`
-
-홈 페이지는 나의 활동을 한눈에 볼 수 있습니다.
-
-- 내가 만든 모임
-- 내가 가입한 모임,
-- 내가 가입 신청한 모임
-- 좋아요 한 모임
-
-을 세분화하여 관리할 수 있습니다.
-
-또한 알림 기능을 통해 나와 관련된 알림을 받아 옵니다.
-
-- 내 게시글에 달린 댓글에 대한 알림
-- 내 게시물에 가입 신청한 사람에 대한 알림
-- 내가 가입신청한 모임의 가입 여부에 대한 알림
-
-을 알림 페이지에서 확인할 수 있습니다.
-
-### `마이페이지`
-
-회원 가입 시에 작성했던 정보를 수정할 수 있는 페이지입니다.
-
-추가적으로 자신의 정보뿐만 아니라 다른 사람의 정보를 확인할 수 있습니다.
+- 일반회원과 크리에이터 회원 관리
+- 공지사항&FAQ 서비스
+- 일반회원과 크리에이터 1:1문의 관리
 
 <br>
 
-## 👩🏻‍🏫 주요 기능 화면 바로보기
+## 👩🏻‍🏫 주요 기능 화면
 
 ### 🔸 메인 페이지
 
-이름, 이메일, 비밀번호, 비밀번호 확인 까지 유효성 검사를 철저히 마친 후 회원가입이 성공적으로 완료되면 마이페이지에 소개 될 프로필을 입력합니다.
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e6bd49b5-841d-4d08-a9c5-e9014c4c2ec3/%ED%8F%BC%ED%94%84_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041005Z&X-Amz-Expires=86400&X-Amz-Signature=7949ae05acf0ad314d8ad1ff3c243d63856ae5b818a7e6893f8ad0eea199b8c3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25ED%258F%25BC%25ED%2594%2584%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
 
-<img src="https://images.velog.io/images/junh0328/post/d93a284e-cbf1-465a-97cf-6987d5bc4307/%E1%84%92%E1%85%AC%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8.2021-11-15%2023_26_02.gif" width="400"/>
+<br>
+<br>
 
+### 🔸 운동 성향테스트 및 추천
+
+
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f727c211-c476-45ac-9690-d4b70ad24518/%EC%9A%B4%EB%8F%99%EC%84%B1%ED%96%A5%ED%85%8C%EC%8A%A4%ED%8A%B8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T042340Z&X-Amz-Expires=86400&X-Amz-Signature=00e4c347ddfd2034baba0a2c82717cb4741d5b3d09433ae7fb5e80f9d5684b2f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259A%25B4%25EB%258F%2599%25EC%2584%25B1%25ED%2596%25A5%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8.png%22&x-id=GetObject" width="500"/>
+
+<br>
+<br>
 
 ### 🔸 클래스 페이지
 
-회원가입 절차에서 입력된 프로필 내용물들을 마이페이지에서 확인해 볼 수 있습니다 ! 🙆🏻‍♀️ 추후에 수정 작업도 가능합니다.
-
-![](https://images.velog.io/images/leemember/post/675043a0-e8d2-4a1b-9802-dd814c84cd8c/%E1%84%86%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.gif)
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8c021417-b4b3-49e0-b5a8-cd1757e019e9/%ED%81%B4%EB%9E%98%EC%8A%A4_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041135Z&X-Amz-Expires=86400&X-Amz-Signature=198b161c4cfd5d372152151afdce2a8467471325d07d56102ba18a2667b4a777&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25ED%2581%25B4%25EB%259E%2598%25EC%258A%25A4%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
 
 <br>
-
 <br>
 
 ### 🔸 소모임 페이지
 
-랜덤 포스트 불러오기
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7b08ce20-6596-4d76-b2de-ac67ebcd5fde/%EC%86%8C%EB%AA%A8%EC%9E%84_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041241Z&X-Amz-Expires=86400&X-Amz-Signature=5f96f3398bdc4e0135ab7f4c0a0eb99e9634601c34983aa14b4fb014b07c9f47&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%2586%258C%25EB%25AA%25A8%25EC%259E%2584%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
 
-<img src="https://images.velog.io/images/junh0328/post/e51ec22d-9cb1-4b48-ac0f-fafca539a40e/%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%E1%84%87%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A5%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5.2021-11-15%2022_55_40.gif" width="400">
-
-게시글 작성하기
-
-<img src="https://images.velog.io/images/junh0328/post/d0999371-c422-45f0-ab11-601a6b94f03e/%E1%84%80%E1%85%B3%E1%86%AF%E1%84%8A%E1%85%B3%E1%84%80%E1%85%B5.2021-11-15%2022_54_32.gif" width="400"/>
-
-게시글 수정하기
-
-<img src="https://images.velog.io/images/junh0328/post/3a40d66b-6630-46df-9162-da564a98bf46/%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5.2021-11-15%2022_57_23.gif" width="400"/>
-
-함께해요 가입 현황 보기
-
-<img src="https://images.velog.io/images/junh0328/post/4f5ad03d-358c-4743-82d9-067f38ebe8ca/%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%AA%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%B5.2021-11-15%2022_50_57.gif" width="400"/>
-
-### 🔸 관리자 
-
-댓글 쓰기 / 수정하기 / 삭제하기 / 답글 쓰기
-
-<img src="https://images.velog.io/images/junh0328/post/225eb540-7409-4526-88df-a02d4a1a0084/%E1%84%83%E1%85%A2%E1%86%BA%E1%84%80%E1%85%B3%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%A7%E1%86%AB.2021-11-15%2023_02_53.gif" width="400"/>
-
-### 🔸 메인(홈) 페이지 `준희`
-
-홈 메인 / 알림 기능
-
-<img src="https://images.velog.io/images/junh0328/post/55e2e981-9651-4e1c-ba90-2a169cf0aefa/%E1%84%92%E1%85%A9%E1%86%B7.2021-11-15%2023_14_19.gif" width="400"/>
-
-내가 작성한 게시글에 모임 링크 추가하기
-
-<img src="https://images.velog.io/images/junh0328/post/50aea534-709b-408b-bcd9-6bae4d7f4952/%E1%84%85%E1%85%B5%E1%86%BC%E1%84%8F%E1%85%B3%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.2021-11-15%2023_17_11.gif" width="400"/>
-
-### 🔸 검색 페이지 `준희`
-
-검색 기능 구현 (최근 검색어 저장 포함)
-
-<img src="https://images.velog.io/images/junh0328/post/d1f9fd4d-5ec8-482a-8feb-ef9f730c2806/%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5.2021-11-15%2023_19_45.gif" width="400"/>
+<br>
+<br>
