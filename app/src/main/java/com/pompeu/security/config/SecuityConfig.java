@@ -68,6 +68,7 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
   //  }
 
 
+
   @Override
   protected void configure(HttpSecurity http) throws Exception{
     //HTTP 관련 보안 설정   
