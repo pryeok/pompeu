@@ -47,6 +47,5 @@ public interface UserLectureService {
   List<Lecture> map(int no);
 
   List<Lecture> si(int no);
-
 }
 
