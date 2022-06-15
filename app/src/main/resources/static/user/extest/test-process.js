@@ -26,7 +26,7 @@
     		btn1.innerHTML = "조용히 힐링할수 있는 한적한 장소";
     		btn2.innerHTML = "언제나 사람이 북적이는 인기있는 장소";
 				process.innerHTML = "3/12";
-				question.innerHTML = "간만에 받은 휴가다! 당신이 검색중인 여행스팟은?";
+				question.innerHTML = "간만에 받은 휴가다! 당신이 검색한 여행스팟은?";
 				safeRisk++;
 				count++;
    			break;
