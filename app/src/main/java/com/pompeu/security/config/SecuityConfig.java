@@ -154,7 +154,6 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
 
 
 
-
   @Override
   public void configure(WebSecurity web) {
     //이미지,자바스크립트,css 디렉토리 보안 설정 
