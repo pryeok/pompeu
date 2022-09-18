@@ -6,7 +6,6 @@ CREATE TABLE `SNS` (
   PRIMARY KEY (`sns_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='SNS';
 
-
 -- pompeudb.claim_reason definition
 
 CREATE TABLE `claim_reason` (
