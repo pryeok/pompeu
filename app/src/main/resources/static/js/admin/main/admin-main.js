@@ -3,6 +3,7 @@ var memC = document.getElementById("member-creator");
 var memR = document.getElementById("member-rookie");
 
 
+
    fetch("/adminMain/memberStatus")
     .then(function(response) {
       return response.json();
