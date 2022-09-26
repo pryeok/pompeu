@@ -7,12 +7,12 @@
 
 ## 📍 프로젝트 소개
 
-> 먼저 프로젝트명 **폼프 는 '폼나는 라이프를 즐기자'** 라는 뜻 입니다. <br> 이전에 운동을 하지 않았거나 취미로 운동을 시작하고 싶은데 어떠한 운동을 하면 좋을지 <br>알기 어려운 입문자들을 위해 맞춤 운동 매칭을 제공하는 서비스가 이 플랫폼의 주목적입니다. 
+> 프로젝트명 **폼프 는 '폼나는 라이프를 즐기자'** 라는 뜻 입니다. <br> 이전에 운동을 하지 않았거나 취미로 운동을 시작하고 싶은데 어떠한 운동을 하면 좋을지 <br>알기 어려운 입문자들을 위해 맞춤 운동 매칭을 제공하는 서비스가 이 플랫폼의 주목적입니다. 
 
 <br>
 <br>
 
-## ⏳ 작업 기간 (2022. 03 ~ 2022. 04)
+## ⏳ 작업 기간 (2022. 03 ~ 2021. 04)
 
 <br>
 <br>
@@ -47,13 +47,13 @@
 <br>
 
 ## 📝 ERD 다이어그램
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c4d91310-4f62-4070-90f4-f385d163e62f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220606%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220606T142442Z&X-Amz-Expires=86400&X-Amz-Signature=f8b9e3aaa4323cc64a130ca156d526e14cc6b56c029044163b9ef6b90750f72d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="1500"/>
+<img src="https://user-images.githubusercontent.com/84580700/175499364-711b3d18-c89f-4916-abf8-d78d505ac309.png" width="1500"/>
 
 <br>
 <br>
 
 ## 🔅 Architecture
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/25b89a71-e574-40a7-a15f-abaacd5fd4c4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220606%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220606T144204Z&X-Amz-Expires=86400&X-Amz-Signature=56d601dadb7add73a0d7ba5d421a3ff2348b65b90668bf1b865d117d612d9e10&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="1500"/>
+<img src="https://user-images.githubusercontent.com/84580700/179182046-927a99ff-eb1f-465d-88a3-4730d02bc5d0.png" width="1500"/>
 
 <br>
 <br>
@@ -90,29 +90,32 @@
 
 ### 🔸 메인 페이지
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e6bd49b5-841d-4d08-a9c5-e9014c4c2ec3/%ED%8F%BC%ED%94%84_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041005Z&X-Amz-Expires=86400&X-Amz-Signature=7949ae05acf0ad314d8ad1ff3c243d63856ae5b818a7e6893f8ad0eea199b8c3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25ED%258F%25BC%25ED%2594%2584%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
+<img src="https://user-images.githubusercontent.com/84580700/175500163-7274066b-7e9c-4e03-8c32-2916e35a1890.png" width="400"/>
 
 <br>
 <br>
 
 ### 🔸 운동 성향테스트 및 추천
 
-
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f727c211-c476-45ac-9690-d4b70ad24518/%EC%9A%B4%EB%8F%99%EC%84%B1%ED%96%A5%ED%85%8C%EC%8A%A4%ED%8A%B8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T042340Z&X-Amz-Expires=86400&X-Amz-Signature=00e4c347ddfd2034baba0a2c82717cb4741d5b3d09433ae7fb5e80f9d5684b2f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%259A%25B4%25EB%258F%2599%25EC%2584%25B1%25ED%2596%25A5%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8.png%22&x-id=GetObject" width="500"/>
-
+<table style="border:hidden">
+  <tr>
+<td><img src="https://user-images.githubusercontent.com/84580700/175499728-d09870fa-77a1-4253-a08b-45865d990ed1.png" width="200"/></td>
+<td><img src="https://user-images.githubusercontent.com/84580700/175499794-255afd1d-3c65-4b8a-aa79-78d5a6114e92.png" width="200"/></td>
+  </tr>
+</table>
 <br>
 <br>
 
 ### 🔸 클래스 페이지
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8c021417-b4b3-49e0-b5a8-cd1757e019e9/%ED%81%B4%EB%9E%98%EC%8A%A4_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041135Z&X-Amz-Expires=86400&X-Amz-Signature=198b161c4cfd5d372152151afdce2a8467471325d07d56102ba18a2667b4a777&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25ED%2581%25B4%25EB%259E%2598%25EC%258A%25A4%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
+<img src="https://user-images.githubusercontent.com/84580700/175499932-2fec152e-860b-4dc7-857a-4e087d486efd.png" width="400"/>
 
 <br>
 <br>
 
 ### 🔸 소모임 페이지
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7b08ce20-6596-4d76-b2de-ac67ebcd5fde/%EC%86%8C%EB%AA%A8%EC%9E%84_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220607T041241Z&X-Amz-Expires=86400&X-Amz-Signature=5f96f3398bdc4e0135ab7f4c0a0eb99e9634601c34983aa14b4fb014b07c9f47&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EC%2586%258C%25EB%25AA%25A8%25EC%259E%2584%2520%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580.png%22&x-id=GetObject" width="600"/>
+<img src="https://user-images.githubusercontent.com/84580700/175500278-fe44395d-ff63-4d9e-a20d-e42e959889ba.png" width="400"/>
 
 <br>
 <br>
