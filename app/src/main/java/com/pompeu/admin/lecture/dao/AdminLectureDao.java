@@ -6,7 +6,6 @@ import com.pompeu.domain.Lecture;
 
 @Mapper  
 public interface AdminLectureDao {
-
   int countAll();
 
   List<Lecture> findAll();
