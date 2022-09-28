@@ -11,7 +11,6 @@ import com.pompeu.domain.LectureTime;
 public interface CreatorLectureDao {
 
   //int countAll();
-
   List<LectureList> findAllMyclass(@Param("no") int no); //리스트 받기
 
   //List<LectureList> findRequestList(@Param("no") int no);
