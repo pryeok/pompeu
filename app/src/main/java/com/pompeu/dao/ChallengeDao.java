@@ -21,6 +21,7 @@ public interface ChallengeDao {
 
   int increaseViewCount(int no);
 
+
 }
 
 
